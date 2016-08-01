@@ -1,0 +1,15 @@
+[Unit]
+Description=SONiC Platform NAS Shell support
+After=sonic-nas.service
+Wants=sonic-nas.service
+DefaultDependencies=no
+
+[Service]
+EnvironmentFile=/etc/sonic/sonic-environment
+ExecStart=/usr/bin/base-nas-shell.sh
+
+# Resource Limitations
+LimitNOFILE=16384
+
+[Install]
+WantedBy=multi-user.target
