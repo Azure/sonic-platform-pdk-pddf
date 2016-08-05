@@ -3,7 +3,7 @@ bin_SCRIPTS = scripts/bin/*
 bin_PROGRAMS = hshell
 hshell_SOURCES = src/hal_shell_client.c
 hshell_CPPFLAGS = -I$(top_srcdir)/sonic -I$(includedir)/sonic
-hshell_LIBADD = -lsonic_common -lsonic_logging -lsonic_object_library
+hshell_LDADD = -lsonic_common -lsonic_logging -lsonic_object_library
 
 pyutilsdir=$(libdir)/sonic
 pyutils_SCRIPTS = scripts/lib/python/*.py
