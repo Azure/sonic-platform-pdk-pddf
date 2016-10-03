@@ -3,7 +3,7 @@ bin_SCRIPTS = scripts/bin/*
 bin_PROGRAMS = hshell
 hshell_SOURCES = src/hal_shell_client.c
 hshell_CPPFLAGS = -I$(top_srcdir)/sonic -I$(includedir)/sonic
-hshell_LDADD = -lsonic_common -lsonic_logging -lsonic_object_library
+hshell_LDADD = -lsonic_common -lsonic_logging
 
 pyutilsdir=$(libdir)/sonic
 pyutils_SCRIPTS = scripts/lib/python/*.py
@@ -20,7 +20,7 @@ libsonic_nas_common_la_CXXFLAGS=-std=c++11
 
 libsonic_nas_common_la_LDFLAGS=-shared -version-info 1:1:0
 
-libsonic_nas_common_la_LIBADD=-lsonic_common -lsonic_object_library -lsonic_cps_class_map -lsonic_logging
+libsonic_nas_common_la_LIBADD=-lsonic_common -lsonic_object_library -lsonic_logging
 
 systemdconfdir=/lib/systemd/system
 systemdconf_DATA = scripts/init/*.service
