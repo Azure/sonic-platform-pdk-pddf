@@ -11,7 +11,14 @@ See [sonic-nas-manifest](https://github.com/Azure/sonic-nas-manifest) for more i
 * `sonic-logging`
 
 ### Dependent packages
-libsonic-logging-dev libsonic-logging1 libsonic-model1 libsonic-model-dev libsonic-common1 libsonic-common-dev libsonic-object-library1 libsonic-object-library-dev
+* `libsonic-logging-dev`
+* `libsonic-logging1`
+* `libsonic-model1`
+* `libsonic-model-dev`
+* `libsonic-common1`
+* `libsonic-common-dev`
+* `libsonic-object-library1` 
+* `libsonic-object-library-dev`
 
 BUILD CMD: sonic_build --dpkg libsonic-logging-dev libsonic-logging1 libsonic-model1 libsonic-model-dev libsonic-common1 libsonic-common-dev libsonic-object-library1 libsonic-object-library-dev -- clean binary
 
